@@ -2,7 +2,7 @@
 
 CC 106395 Spring 2021: Course Repository 
 
-###PROJECT MEMBERS###
+## Project Members ##
 StdID | Name
 ------------ | -------------
 62708 | Bilal Khan
