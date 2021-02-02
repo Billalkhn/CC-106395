@@ -141,17 +141,19 @@ NewObjectExpression → new IDENT ( )
 
 ### Sample Program in MiniJava
 
-> class EvenOdd
-> {
-> public static void main(String args[])
-> {
-> int number;
-> System.out.println("Enter an integer: ");
-> Scanner input = new Scanner(System.in);
-> num = input.nextInt();
-> if ( num % 2 == 0 )
-> System.out.println("The number is even");
-> else
-> System.out.println("The number is odd");
-> }
-> }
+```
+ class EvenOdd
+ {
+ public static void main(String args[])
+ {
+ int number;
+ System.out.println("Enter an integer: ");
+ Scanner input = new Scanner(System.in);
+ num = input.nextInt();
+ if ( num % 2 == 0 )
+ System.out.println("The number is even");
+ else
+ System.out.println("The number is odd");
+ }
+ }
+```
