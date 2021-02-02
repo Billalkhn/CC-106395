@@ -78,3 +78,35 @@ BOOLEAN=”boolean”, CLASS ="class", IF ="if", ELSE ="else", INT =”int”, N
 LPAREN = "(", RPAREN = ")", LBRACKET = "[", RBRACKET = "]", LCURLY = "{", RCURLY =    "}",
 ## Special Tokens
 EOT = "$", ERRORS = "<error>", ERROR COMMENTS = "<unclosed_comments>", WHITESPEACES = " "
+
+### MiniJava Grammar 
+Program → ClassDeclaration*
+ClassDeclaration → class IDENT(extends IDENT)? { ClassMember * }
+ClassMember → Field | Method | MainMethod
+Field → public Type IDENT ;
+MainMethod → public static void main ( String [ ] IDENT ) Block
+Method → public Type IDENT ( Parameters? ) Block
+Parameters → Parameter | Parameter , Parameters
+Parameter → Type IDENT
+Type → int | boolean | void | IDENT
+Statement → Block
+| EmptyStatement
+| IfStatement
+| PrintStatement
+| ExpressionStatement
+| WhileStatement
+| ReturnStatement
+Block → { BlockStatement* }
+BlockStatement → Statement | LocalVariableDeclarationStatement
+LocalVariableDeclarationStatement → Type IDENT(= Expression)? ;
+EmptyStatement → ;
+WhileStatement → while ( Expression ) Statement
+IfStatement → if ( Expression ) Statement(else Statement)?
+PrintStatement → PrintStatementHead . println ( Expression ) ;
+PrintStatementHead → ( PrintStatementHead ) | System . out
+ExpressionStatement → Expression ;
+ReturnStatement → return Expression? ;
+Expression → AssignmentExpression
+AssignmentExpression → LogicalOrExpression(= AssignmentExpression)?
+LogicalOrExpression → (LogicalOrExpression ||)? LogicalAndExpression
+LogicalAndExpression → (LogicalAndExpression &&)? EqualityExpression
