@@ -88,6 +88,8 @@ EOT = "$", ERRORS = "<error>", ERROR COMMENTS = "<unclosed_comments>", WHITESPEA
 
 ## MiniJava Grammar
 
+```
+
 Program → ClassDeclaration*
 ClassDeclaration → class IDENT(extends IDENT)? { ClassMember * }
 ClassMember → Field | Method | MainMethod
@@ -138,6 +140,7 @@ ExpressionList → Expression(, Expression)\*
 FieldAccessExpression → (PrimaryExpression .)? IDENT
 LocalVariableReferenceExpression → IDENT
 NewObjectExpression → new IDENT ( )
+```
 
 ## Sample Program in MiniJava
 
