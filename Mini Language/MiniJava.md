@@ -79,7 +79,8 @@ LPAREN = "(", RPAREN = ")", LBRACKET = "[", RBRACKET = "]", LCURLY = "{", RCURLY
 ## Special Tokens
 EOT = "$", ERRORS = "<error>", ERROR COMMENTS = "<unclosed_comments>", WHITESPEACES = " "
 
-### MiniJava Grammar 
+### MiniJava Grammar
+
 Program → ClassDeclaration*
 ClassDeclaration → class IDENT(extends IDENT)? { ClassMember * }
 ClassMember → Field | Method | MainMethod
@@ -110,3 +111,24 @@ Expression → AssignmentExpression
 AssignmentExpression → LogicalOrExpression(= AssignmentExpression)?
 LogicalOrExpression → (LogicalOrExpression ||)? LogicalAndExpression
 LogicalAndExpression → (LogicalAndExpression &&)? EqualityExpression
+EqualityExpression → (EqualityExpression(== | !=))? RelationalExpression
+RelationalExpression → (RelationalExpression(< | <= | > | >=))? AdditiveExpression
+AdditiveExpression → (AdditiveExpression(+ | -))? MultiplicativeExpression
+MultiplicativeExpression → (MultiplicativeExpression(* | / | %))? UnaryExpression
+UnaryExpression → PrimaryExpression | (! | -) UnaryExpression
+PrimaryExpression → null
+| false
+| true
+| INTEGER_LITERAL
+| MethodInvocationExpression
+| FieldAccessExpression
+| LocalVariableReferenceExpression
+| this
+| ( Expression )
+| NewObjectExpression
+MethodInvocationExpression → (PrimaryExpression .)? IDENT ( ExpressionList? )
+ExpressionList → Expression(, Expression)\*
+FieldAccessExpression → (PrimaryExpression .)? IDENT
+LocalVariableReferenceExpression → IDENT
+NewObjectExpression → new IDENT ( )
+
