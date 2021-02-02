@@ -53,30 +53,37 @@ The semantics of MiniJava are compatible with the semantics of Java, apart from 
 2. It is not possible to call the main (String [] args) method in MiniJava program.
 3. It is not necessary to verify the definite assignment rules of Java.
 
-
-
 ### Syntax
-There are few syntax that are important in MiniJava language are, 
-1.	() is intended to group several syntactic components.
-2.	Terminals are written in bold format. E.g.: the public or static.
-3.	Non-terminals are written in italic format. For example: expressions.
-4.	| demonstrates alternatives.
-5.	Y? It means no or precisely one Y occurrence. 
-6.	Y* means there can be none or multiple of Y occurrences. 
 
-### Keywords/Token Table 
+There are few syntax that are important in MiniJava language are,
 
-## Literals/identifiers/operators 
+1. () is intended to group several syntactic components.
+2. Terminals are written in bold format. E.g.: the public or static.
+3. Non-terminals are written in italic format. For example: expressions.
+4. | demonstrates alternatives.
+5. Y? It means no or precisely one Y occurrence.
+6. Y\* means there can be none or multiple of Y occurrences.
 
-NUMBER ="<num>", IDENTIFIER = "<identifier>", PLUS ="+", MINUS ="-", BECOMES = "=", INTO = "*", DIVISION ="/", AND ="&&", OR ="||", GTHAN = ">", LTHAN = "<", EQUALS = "==", NEQUALS = "!=" 
+### Keywords/Token Table
+
+## Literals/identifiers/operators
+
+NUMBER ="<num>", IDENTIFIER = "<identifier>", PLUS ="+", MINUS ="-", BECOMES = "=", INTO = "\*", DIVISION ="/", AND ="&&", OR ="||", GTHAN = ">", LTHAN = "<", EQUALS = "==", NEQUALS = "!="
 
 ## Punctuations
+
 DOT =".", COMMA = ",", SEMICOLON = ";"
-## Reserved Words 
+
+## Reserved Words
+
 BOOLEAN=”boolean”, CLASS ="class", IF ="if", ELSE ="else", INT =”int”, NEW ="new", NULL ="null", VOID ="void", WHILE ="while", TRUE ="true", RETURN ="return", PUBLIC ="public", THIS ="this", STATIC ="static", PRIVATE ="private"
-## Brackets 
-LPAREN = "(", RPAREN = ")", LBRACKET = "[", RBRACKET = "]", LCURLY = "{", RCURLY =    "}",
+
+## Brackets
+
+LPAREN = "(", RPAREN = ")", LBRACKET = "[", RBRACKET = "]", LCURLY = "{", RCURLY = "}",
+
 ## Special Tokens
+
 EOT = "$", ERRORS = "<error>", ERROR COMMENTS = "<unclosed_comments>", WHITESPEACES = " "
 
 ### MiniJava Grammar
@@ -132,3 +139,19 @@ FieldAccessExpression → (PrimaryExpression .)? IDENT
 LocalVariableReferenceExpression → IDENT
 NewObjectExpression → new IDENT ( )
 
+### Sample Program in MiniJava
+
+> class EvenOdd
+> {
+> public static void main(String args[])
+> {
+> int number;
+> System.out.println("Enter an integer: ");
+> Scanner input = new Scanner(System.in);
+> num = input.nextInt();
+> if ( num % 2 == 0 )
+> System.out.println("The number is even");
+> else
+> System.out.println("The number is odd");
+> }
+> }
