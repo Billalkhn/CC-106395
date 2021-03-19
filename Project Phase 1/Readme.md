@@ -90,10 +90,15 @@ An identifier is a string of letters, underscores, and digits that begins with a
 
 Literals/identifiers/operators
 NUMBER =""
+
 IDENTIFIER = ""
+
 PLUS ="+"
+
 MINUS ="-"
+
 BECOMES = "="
+
 INTO = "*"
 DIVISION ="/"
 AND ="&&"
