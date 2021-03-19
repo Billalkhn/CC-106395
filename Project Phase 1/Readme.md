@@ -88,7 +88,8 @@ An identifier is a string of letters, underscores, and digits that begins with a
 
 **LEXICAL TOKENS**
 
-Literals/identifiers/operators
+**Literals/identifiers/operators**
+
 NUMBER =""
 
 IDENTIFIER = ""
@@ -100,44 +101,83 @@ MINUS ="-"
 BECOMES = "="
 
 INTO = "*"
+
 DIVISION ="/"
+
 AND ="&&"
+
 OR ="||"
+
 GTHAN = ">"
+
 LTHAN = "<"
+
 EQUALS = "=="
+
 NEQUALS = "! ="
-Punctuations
+
+**Punctuations**
+
 DOT ="."
+
 COMMA = ","
+
 SEMICOLON = ";"
-Reserved Words
+
+**Reserved Words**
+
 BOOLEAN=”boolean”
- CLASS ="class"
- IF ="if"
+
+CLASS ="class"
+
+IF ="if"
+
 ELSE ="else"
+
 INT =”int”
+
 NEW ="new"
+
 NULL ="null"
+
 VOID ="void"
+
 WHILE ="while"
+
 TRUE ="true"
+
 RETURN ="return"
+
 PUBLIC ="public"
+
 THIS ="this"
+
 STATIC ="static"
+
 PRIVATE ="private"
-Brackets
+
+**Brackets**
+
 LPAREN = "("
+
 RPAREN = ")"
+
 LBRACKET = "["
+
 RBRACKET = "]"
+
 LCURLY = "{"
+
 RCURLY = "}"
-Special Tokens
+
+**Special Tokens**
+
 EOT = "$"
+
 ERRORS = ""
+
 ERROR COMMENTS = "<unclosed_comments>"
+
 WHITESPEACES = " "
 
 
