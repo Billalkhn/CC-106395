@@ -85,3 +85,54 @@ A numeric integer literal is a digit sequence that starts with any digit from 1 
 
 An identifier is a string of letters, underscores, and digits that begins with an underscore or a letter and continues with any number of letters, underscores, or digits. Only the letters A to Z and a to z are permitted, with case being crucial. IDENTs are not keywords.
 
+
+**LEXICAL TOKENS**
+
+Literals/identifiers/operators
+NUMBER =""
+IDENTIFIER = ""
+PLUS ="+"
+MINUS ="-"
+BECOMES = "="
+INTO = "*"
+DIVISION ="/"
+AND ="&&"
+OR ="||"
+GTHAN = ">"
+LTHAN = "<"
+EQUALS = "=="
+NEQUALS = "! ="
+Punctuations
+DOT ="."
+COMMA = ","
+SEMICOLON = ";"
+Reserved Words
+BOOLEAN=”boolean”
+ CLASS ="class"
+ IF ="if"
+ELSE ="else"
+INT =”int”
+NEW ="new"
+NULL ="null"
+VOID ="void"
+WHILE ="while"
+TRUE ="true"
+RETURN ="return"
+PUBLIC ="public"
+THIS ="this"
+STATIC ="static"
+PRIVATE ="private"
+Brackets
+LPAREN = "("
+RPAREN = ")"
+LBRACKET = "["
+RBRACKET = "]"
+LCURLY = "{"
+RCURLY = "}"
+Special Tokens
+EOT = "$"
+ERRORS = ""
+ERROR COMMENTS = "<unclosed_comments>"
+WHITESPEACES = " "
+
+
