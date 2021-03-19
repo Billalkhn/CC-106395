@@ -6,7 +6,7 @@ StdID | Name
 
 The language that we have selected for our compiler is _**“Mini Java”**_. 
 
-        **What Is MiniJava? **
+       ** **What Is MiniJava? ****
 
 Mini-Java is a subset of Java which has been simplified (and modified). A MiniJava programs purpose is determined by its meaning as a Java program. Every MiniJava program is a fully functional Java program that follows Java semantics. It supports classes and limited inheritance, simple data types and a few structured control constructors. The MiniJava software is a single file that does not have a package declaration (and therefore does not correspond to the default package) or imports. It is made up of one or more Java classes. The classes are simple and easy there are no interface classes, subclasses, or nested classes in it.  
 
@@ -14,9 +14,9 @@ In MiniJava fields and methods are the members of a class. Public or private acc
 MiniJava has three types: primitive types, class types, and array types. The primitive types are void, int, and Boolean, and the array types are the integer array int [] and the class [] array, where class can be any class type.
 
 
-        **Constructs of the MiniJava Language**
+      **  **Constructs of the MiniJava Language****
 
-    **- Example 1 (Simple program)**
+   ** **- Example 1 (Simple program)****
 
 class Abc {
     public static void main(String[] a) {
@@ -25,7 +25,7 @@ class Abc {
 }
 
 
-    **-Example 2 (If/else loop)**
+   ** **-Example 2 (If/else loop)****
 
 class Factorial {
     public static void main(String[] a) {
@@ -41,7 +41,7 @@ class Fac {
     }
 }
 
-    **-Example 3 (Arrays Declaration)**
+  **  **-Example 3 (Arrays Declaration)****
 
 class Arrays {
     public static void main(String[] a){
@@ -61,26 +61,27 @@ class MyClass {
     }
 }
 
-        **Lexical Specifications of MiniJava Language**
+      **  **Lexical Specifications of MiniJava Language****
 
 The following lexical elements are found in MiniJava:
-    **• White Spaces: **
+
+   ** **• White Spaces: ****
 
 Space, new line, carriage return, and tabulator are examples of white space.
 
-    **• Comments: **
+   ** **• Comments: ****
 
 A comment is described as the string /* followed by any characters until the terminating */. Comments cannot be nested, and any subsequent /* inside a comment would be ignored; a comment will always end when the first */ is detected.
 
-    **• Keywords: and operators:** 
+   ** **• Keywords: and operators:** **
 
 In the grammar classification, all tokens in bold are keywords or operators. Main, String, System, Out, and Println are all exceptions. They are not keywords, but rather identifiers.
 
-    **• Integer Literals:**
+  **  **• Integer Literals:****
 
 A numeric integer literal is a digit sequence that starts with any digit from 1 to 9 and ends with any number of digits from 0 to 9. A single 0 can be used as an integer literal as well.
 
-    **• Identifier:** 
+   ** **• Identifier:** **
 
 An identifier is a string of letters, underscores, and digits that begins with an underscore or a letter and continues with any number of letters, underscores, or digits. Only the letters A to Z and a to z are permitted, with case being crucial. IDENTs are not keywords.
 
