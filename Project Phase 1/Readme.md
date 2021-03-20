@@ -288,3 +288,14 @@ An identifier is a string of letters, underscores, and digits that begins with a
     LocalVariableReferenceExpression → IDENT
 
     NewObjectExpression → new IDENT ( )
+    
+
+## Context Free Grammar (CFG) of MiniJava:
+
+•	A CFG is a set of A -> X1X2... Xn (n 0) productions. If n is equal to 0, we can write either A-> or A -> ∈.
+
+•	N, the sequence of non-terminals (A, B, C... ∈). The start symbol is a non-terminal in the grammar.
+
+•	T stands for the collection of tokens, also known as terminals.
+
+•	Productions A → α, A → β... abbreviated as A → α | β |...
