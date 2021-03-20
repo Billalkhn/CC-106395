@@ -236,3 +236,55 @@ An identifier is a string of letters, underscores, and digits that begins with a
     PrintStatement → PrintStatementHead . println ( Expression ) ;
 
     PrintStatementHead → ( PrintStatementHead ) | System . out
+    
+    ExpressionStatement → Expression ;
+
+    ReturnStatement → return Expression? ;
+
+    Expression → AssignmentExpression
+
+    AssignmentExpression → LogicalOrExpression(= AssignmentExpression)?
+
+    LogicalOrExpression → (LogicalOrExpression ||)? LogicalAndExpression
+
+    LogicalAndExpression → (LogicalAndExpression &&)? EqualityExpression
+
+    EqualityExpression → (EqualityExpression(== | !=))? RelationalExpression
+
+    RelationalExpression → (RelationalExpression(< | <= | > | >=))?
+
+    AdditiveExpression → (AdditiveExpression(+ | -))?
+
+    MultiplicativeExpression → (MultiplicativeExpression(* | / | %))?
+
+    UnaryExpression → PrimaryExpression | (! | -)
+
+    PrimaryExpression → null
+
+    | false
+
+    | true
+
+    | INTEGER_LITERAL
+
+    | MethodInvocationExpression
+
+    | FieldAccessExpression
+
+    | LocalVariableReferenceExpression
+
+    | this
+
+    | ( Expression )
+
+    | NewObjectExpression
+
+    MethodInvocationExpression → (PrimaryExpression .)?    IDENT(ExpressionList?)
+
+    ExpressionList → Expression(, Expression)\*
+
+    FieldAccessExpression → (PrimaryExpression .)? IDENT
+
+    LocalVariableReferenceExpression → IDENT
+
+    NewObjectExpression → new IDENT ( )
