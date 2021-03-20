@@ -187,4 +187,52 @@ An identifier is a string of letters, underscores, and digits that begins with a
     
     WHITESPEACES = " "
 
+## **Grammar Notations in MiniJava:**
 
+    Program → ClassDeclaration*
+
+    ClassDeclaration → class IDENT(extends IDENT)? { ClassMember * }
+
+    ClassMember → Field | Method | MainMethod
+
+    Field → public Type IDENT ;
+
+    MainMethod → public static void main ( String [ ] IDENT ) Block
+
+    Method → public Type IDENT ( Parameters? ) Block
+
+    Parameters → Parameter | Parameter , Parameters
+
+    Parameter → Type IDENT
+
+    Type → int | boolean | void | IDENT
+
+    Statement → Block
+
+    | EmptyStatement
+
+    | IfStatement
+
+    PrintStatement
+
+    | ExpressionStatement
+
+    | WhileStatement
+
+    | ReturnStatement
+
+    Block → { BlockStatement* }
+
+    BlockStatement → Statement | LocalVariableDeclarationStatement
+
+    LocalVariableDeclarationStatement → Type IDENT(= Expression)? ;
+
+    EmptyStatement → ;
+
+    WhileStatement → while ( Expression ) Statement
+
+    IfStatement → if ( Expression ) Statement(else Statement)?
+
+    PrintStatement → PrintStatementHead . println ( Expression ) ;
+
+    PrintStatementHead → ( PrintStatementHead ) | System . out
