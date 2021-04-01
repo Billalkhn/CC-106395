@@ -67,3 +67,21 @@ int|void|boolean|double|float {printf("\n %d Keywords:%s",Keyword,yytext);}
 private|static {printf("\n %d Specifiers:%s",Specifier,yytext);}
 
 if|else {printf("\n %d Loops:%s",Keyword,yytext);}
+
+void|int {printf("\n %d Return type:%s",Keyword,yytext);}
+
+"System.out.println"|"System.out.print" {printf("\n %d Print statement:%s",Print,yytext);}
+
+[a-zA-Z]+[_a-zA-Z0-9]* {printf("\n %d Variable:%s",ID,yytext);}
+
+null|return|this|new|true|false {printf("\n %d Reserved Keywords:%s",Keyword,yytext);}
+
+do|while|switch {printf("\n %d Loop Statements:%s",Keyword,yytext);}
+
+[ |\n|\t|" "] {printf("\n %d Whitespaces:%s",Spaces,yytext);}
+
+"*/"
+
+"//"[a-zA-Z0-9!@#.,:$%^&*()_+]*|"/*"[a-zA-Z0-9!@#$%^&*()_+]*"*/" {printf("\n %d Comment:%s",Comment,yytext);}
+
+%%
