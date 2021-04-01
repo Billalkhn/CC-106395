@@ -85,3 +85,12 @@ do|while|switch {printf("\n %d Loop Statements:%s",Keyword,yytext);}
 "//"[a-zA-Z0-9!@#.,:$%^&*()_+]*|"/*"[a-zA-Z0-9!@#$%^&*()_+]*"*/" {printf("\n %d Comment:%s",Comment,yytext);}
 
 %%
+
+int main()
+
+{
+
+  yylex();
+
+}
+
