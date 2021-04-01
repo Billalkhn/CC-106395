@@ -94,3 +94,7 @@ int main()
 
 }
 
+###  **Screenshots of Output**
+
+![output2](https://user-images.githubusercontent.com/55507105/113283887-4b735780-9302-11eb-8927-33ceb46543db.JPG)
+
