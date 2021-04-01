@@ -98,3 +98,6 @@ int main()
 
 ![output2](https://user-images.githubusercontent.com/55507105/113283887-4b735780-9302-11eb-8927-33ceb46543db.JPG)
 
+![Output1](https://user-images.githubusercontent.com/51243282/113284042-7e1d5000-9302-11eb-8a2c-06537026cbc4.JPG)
+
+
