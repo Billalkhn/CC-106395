@@ -154,3 +154,58 @@ LTHAN = "<"
 EQUALS = "=="
 
 NEQUALS = "! ="
+
+
+**Punctuations**
+
+DOT ="."
+
+COMMA = ","
+
+SEMICOLON = ";"
+
+**Reserved Words**
+
+BOOLEAN=”boolean”
+
+CLASS ="class"
+
+IF ="if"
+
+ELSE ="else"
+
+INT =”int”
+
+NEW ="new"
+
+NULL ="null"
+
+VOID ="void"
+
+WHILE ="while"
+
+TRUE ="true"
+
+RETURN ="return"
+
+PUBLIC ="public"
+
+THIS ="this"
+
+STATIC ="static"
+
+PRIVATE ="private"
+
+**Brackets**
+
+LPAREN = "("
+
+RPAREN = ")"
+
+LBRACKET = "["
+
+RBRACKET = "]"
+
+LCURLY = "{"
+
+RCURLY = "}"
