@@ -106,3 +106,15 @@ class BS{
 
 }
 ```
+##Lexical Specification##
+
+The following are the lexical specifications found in MiniJava Language:
+
+• White Spaces:
+Space, new line, carriage return, and tabulator are examples of white space.
+
+• Comments:
+A comment is described as the string /* followed by any characters until the terminating /. Comments cannot be nested, and any subsequent / inside a comment would be ignored; a comment will always end when the first */ is detected.
+
+• Keywords: and operators:
+In the grammar classification, all tokens in bold are keywords or operators. Main, String, System, Out, and Println are all exceptions. They are not keywords, but rather identifiers.
