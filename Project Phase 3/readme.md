@@ -15,7 +15,8 @@ The main aim of this project was to understand the importance of compiler. Being
 The language that we have used to design our parser is MINIJAVA. Basically the minijava language is a subset of java which is more simplified and modified. It is a teaching-oriented programming language predicated on Sun Microsystems' Java language. The MiniJava environment's core is a condensed version of the standard Java release, designed to alleviate the fear that beginners feel when confronted with a framework as complex as the Java environment.A MiniJava programs purpose is determined by its meaning as a Java program. Every MiniJava program is a fully functional Java program that follows Java semantics. It supports classes and limited inheritance, simple data types and a few structured control constructors. The MiniJava software is a single file that does not have a package declaration (and therefore does not correspond to the default package) or imports. It is made up of one or more Java classes. The classes are simple and easy there are no interface classes, subclasses, or nested classes in it.
 
 ##BubbleSort Implementation in MiniJava Language##
-
+```java
+`
 ```MiniJava
 class BubbleSort{
     public static void main(String[] a){
@@ -107,6 +108,7 @@ class BS{
     }
 
 }
+````
 ```
 ##Lexical Specification##
 
