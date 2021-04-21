@@ -17,8 +17,8 @@
 
 %%
 
-"class" {printf("\n %d Start of the program:%s",Program,yytext);}
-main {printf("\n %d Name of class:%s",Program,yytext);}
+"class" {printf("\n %d Class Declaration:%s",Program,yytext);}
+main {printf("\n %d Main Method of class:%s",Program,yytext);}
 "+"|"-"|"*"|"/" {printf("\n %d Operators:%s",OP,yytext);}
 "<"|">"|"=="|"!=" {printf("\n %d Comparision Operators:%s",OP,yytext);}
 "=" {printf("\n %d Assignment:%s",OP,yytext);}
