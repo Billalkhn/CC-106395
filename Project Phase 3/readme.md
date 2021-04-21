@@ -73,3 +73,18 @@ class BS{
 	}
 	return 0 ;
     }
+    // Printing
+    public int Print(){
+	int j ;
+	j = 0 ;
+	while (j < (size)) {
+	    System.out.println(number[j]);
+	    j = j + 1 ;
+	}
+	return 0 ;
+    }
+    
+    // Initializing array of integers
+    public int Init(int b){
+	size = b ;
+	number = new int[b] ;
