@@ -109,7 +109,7 @@ class BS{
 
 }
 ````
-```
+
 ##Lexical Specification##
 
 The following are the lexical specifications found in MiniJava Language:
@@ -129,9 +129,9 @@ A numeric integer literal is a digit sequence that starts with any digit from 1 
 • Identifier:
 An identifier is a string of letters, underscores, and digits that begins with an underscore or a letter and continues with any number of letters, underscores, or digits. Only the letters A to Z and a to z are permitted, with case being crucial. IDENTs are not keywords.
 
-###LEXICAL TOKENS###
+# LEXICAL TOKENS
 
-**Literals/identifiers/operators**
+### Literals/identifiers/operators
 
 NUMBER =""
 
@@ -159,7 +159,7 @@ EQUALS = "=="
 
 NEQUALS = "! ="
 
-**Punctuations**
+### Punctuations
 
 DOT ="."
 
@@ -167,7 +167,7 @@ COMMA = ","
 
 SEMICOLON = ";"
 
-**Reserved Words**
+### Reserved Words
 
 BOOLEAN=”boolean”
 
@@ -199,7 +199,7 @@ STATIC ="static"
 
 PRIVATE ="private"
 
-**Brackets**
+### Brackets
 
 LPAREN = "("
 
@@ -213,7 +213,7 @@ LCURLY = "{"
 
 RCURLY = "}"
 
-**Special Tokens**
+### Special Tokens
 
 EOT = "$"
 
@@ -325,7 +325,7 @@ LocalVariableReferenceExpression → IDENT
 
 NewObjectExpression → new IDENT ( )
 
-##Problems Faced##
+# Problems Faced
 
 These are the following problems that we have faced in our project.
 
