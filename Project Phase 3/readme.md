@@ -118,3 +118,39 @@ A comment is described as the string /* followed by any characters until the ter
 
 • Keywords: and operators:
 In the grammar classification, all tokens in bold are keywords or operators. Main, String, System, Out, and Println are all exceptions. They are not keywords, but rather identifiers.
+
+• Integer Literals:
+A numeric integer literal is a digit sequence that starts with any digit from 1 to 9 and ends with any number of digits from 0 to 9. A single 0 can be used as an integer literal as well.
+
+• Identifier:
+An identifier is a string of letters, underscores, and digits that begins with an underscore or a letter and continues with any number of letters, underscores, or digits. Only the letters A to Z and a to z are permitted, with case being crucial. IDENTs are not keywords.
+
+###LEXICAL TOKENS###
+
+**Literals/identifiers/operators**
+
+NUMBER =""
+
+IDENTIFIER = ""
+
+PLUS ="+"
+
+MINUS ="-"
+
+BECOMES = "="
+
+INTO = "*"
+
+DIVISION ="/"
+
+AND ="&&"
+
+OR ="||"
+
+GTHAN = ">"
+
+LTHAN = "<"
+
+EQUALS = "=="
+
+NEQUALS = "! ="
