@@ -22,3 +22,19 @@ class BubbleSort{
 	System.out.println(new BBS().Start(10));
     }
 }
+
+class BS{
+    
+    int[] number ;
+    int size ;
+
+    // Invoke the Initialization, Sort and Printing Methods
+    public int Start(int b){
+	int aux01 ;
+	aux01 = this.Init(b);
+	aux01 = this.Print();
+	System.out.println(99999);
+	aux01 = this.Sort();
+	aux01 = this.Print();
+	return 0 ;
+    }
