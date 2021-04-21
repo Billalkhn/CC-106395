@@ -308,3 +308,21 @@ LocalVariableReferenceExpression → IDENT
 
 NewObjectExpression → new IDENT ( )
 
+
+##Problems Faced##
+
+These are the following problems that we have faced in our project.
+
+###Problem 1: No Background of Java###
+So before this project both of us had zero knowledge about java. Our domain area is react native (javaScript) but we though that why not give it a shot and do something that we haven't done before. So we decided to take up on MiniJava as it's a smaller component of Java language. Initially we had many difficulties like we didn't knew how it works, how can we declare variable and methods, its syntax and so many things like this. But once we learned and got basic knowledge about it then we had no such difficulty. 
+
+###Problem 2: Github###
+So I (Rohma) didn't knew how to use this platform Github as none of our teacher asked to submit projects on Github so it was my first time using it. Initially i didn't knew how to make repositiories and such things. I had very difficulties in formatting the content in Files and making repository etc. but my other group member had hands on it so he helped in using this platform. And now i have learned how to use Github.  
+
+
+
+
+##References##
+
+- [Github] (https://github.com/starbops/MJP)
+- [Website] (https://courses.engr.illinois.edu/cs421/sp2012/mps/MP3/mp3.pdf)
