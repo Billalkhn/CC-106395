@@ -276,3 +276,35 @@ ExpressionStatement → Expression ;
 ReturnStatement → return Expression? ;
 
 Expression → AssignmentExpression
+
+
+PrimaryExpression → null
+
+| false
+
+| true
+
+| INTEGER_LITERAL
+
+| MethodInvocationExpression
+
+| FieldAccessExpression
+
+| LocalVariableReferenceExpression
+
+| this
+
+| ( Expression )
+
+| NewObjectExpression
+
+MethodInvocationExpression → (PrimaryExpression .)?    IDENT(ExpressionList?)
+
+ExpressionList → Expression(, Expression)\*
+
+FieldAccessExpression → (PrimaryExpression .)? IDENT
+
+LocalVariableReferenceExpression → IDENT
+
+NewObjectExpression → new IDENT ( )
+
