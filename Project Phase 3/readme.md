@@ -39,7 +39,7 @@ class BS{
 	return 0 ;
     }
 
-  
+   
     // Sort array of integers using Bublesort method
     public int Sort(){
 	int nt ;
@@ -73,6 +73,7 @@ class BS{
 	}
 	return 0 ;
     }
+
     // Printing
     public int Print(){
 	int j ;
@@ -88,3 +89,20 @@ class BS{
     public int Init(int b){
 	size = b ;
 	number = new int[b] ;
+	
+	number[0] = 4 ;
+	number[1] = 20  ; 
+	number[2] = 12 ;
+	number[3] = 16 ;
+	number[4] = 10 ; 
+	number[5] = 1 ;
+	number[6] = 6  ; 
+	number[7] = 9  ; 
+	number[8] = 2 ; 
+	number[9] = 5  ;
+	
+	return 0 ;	
+    }
+
+}
+```
