@@ -38,3 +38,29 @@ class BS{
 	aux01 = this.Print();
 	return 0 ;
     }
+
+ 
+    // Sort array of integers using Bublesort method
+    public int Sort(){
+	int nt ;
+	int i ;
+	int aux02 ;
+	int aux04 ;
+	int aux05 ;
+	
+	int j ;
+	int t ;
+	i = size - 1 ;
+	aux02 = 0 - 1 ;
+	while (aux02 < i) {
+	    j = 1 ;
+	    //aux03 = i+1 ;
+	    while (j < (i+1)){
+		aux02 = j - 1 ;
+		aux04 = number[aux02] ;
+		aux05 = number[j] ;
+		
+	    i = i - 1 ;
+	}
+	return 0 ;
+    }
