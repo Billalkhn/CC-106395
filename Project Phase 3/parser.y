@@ -93,3 +93,35 @@ Statement
     |   Identifier '=' Expression ';'
     |   Identifier '[' Expression ']' '=' Expression ';'
     ;
+
+ExpressionList
+    :   Expression
+    |   Expression ',' ExpressionList
+    |   /* Empty */
+    ;
+
+Expression
+    :   Expression And Expression
+    |   Expression '<' Expression
+    |   Expression '+' Expression
+    |   Expression '-' Expression
+    |   Expression '*' Expression
+    |   Expression '[' Expression ']'
+    |   Expression '.' ArrayLength
+    |   Expression '.' Identifier '(' ExpressionList ')'
+    |   Number
+    |   True
+    |   False
+    |   Identifier
+    |   This
+    |   New Integer '[' Expression ']'
+    |   New Identifier '(' ')'
+    |   '!' Expression
+    |   '(' Expression ')'
+    ;
+
+Identifier: Id
+          | Statement {yyerror ("Syntax Error\n"); YYABORT; }
+    ;
+
+%%
