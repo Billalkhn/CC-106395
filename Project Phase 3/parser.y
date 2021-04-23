@@ -67,3 +67,29 @@ MethodDeclaration
     :   Public Type Identifier '(' ParameterList ')' '{' VarDeclarationList StatementList Return Expression ';' '}'
     |   Public Type Identifier '(' ParameterList ')' '{' StatementList Return Expression ';' '}'
     ;
+ParameterList
+    :   Type Identifier
+    |   Type Identifier ',' ParameterList
+    |   /* Empty */
+    ;
+
+Type
+    :   Integer '[' ']'
+    |   Boolean
+    |   Integer
+    |   Identifier
+    ;
+
+StatementList
+    :   Statement StatementList
+    |   /* Empty */
+    ;
+
+Statement
+    :   '{' StatementList '}'
+    |   If '(' Expression ')' Statement Else Statement
+    |   While '(' Expression ')' Statement
+    |   Println '(' Expression ')' ';'
+    |   Identifier '=' Expression ';'
+    |   Identifier '[' Expression ']' '=' Expression ';'
+    ;
