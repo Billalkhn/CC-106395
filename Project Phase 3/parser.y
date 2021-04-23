@@ -48,3 +48,22 @@ ClassDeclaration
     |   Class Identifier Extends Identifier '{' VarDeclarationList MethodDeclarationList '}'
     |   Class Identifier Extends Identifier '{' MethodDeclarationList '}'
     ;
+
+VarDeclarationList
+    :   VarDeclaration
+    |   VarDeclarationList VarDeclaration
+    ;
+
+VarDeclaration
+    :   Type Identifier ';'
+    ;
+
+MethodDeclarationList
+    :   MethodDeclaration MethodDeclarationList
+    |   /* Empty */
+    ;
+
+MethodDeclaration
+    :   Public Type Identifier '(' ParameterList ')' '{' VarDeclarationList StatementList Return Expression ';' '}'
+    |   Public Type Identifier '(' ParameterList ')' '{' StatementList Return Expression ';' '}'
+    ;
