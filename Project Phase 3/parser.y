@@ -26,3 +26,25 @@ void yyerror(char *s);
 %left '!'
 %nonassoc '<'
 
+%start Goal
+
+%%
+Goal
+    :   MainClass ClassDeclarationList      { printf("OK this is the valid expression\n"); YYACCEPT; }
+    ;
+
+MainClass
+    :   Class Identifier '{' Public Static Void Main '(' String '[' ']' Identifier ')' '{' Statement '}' '}'
+    ;
+
+ClassDeclarationList
+    :   ClassDeclaration ClassDeclarationList
+    |   /* Empty */
+    ;
+
+ClassDeclaration
+    :   Class Identifier '{' VarDeclarationList MethodDeclarationList '}'
+    |   Class Identifier '{' MethodDeclarationList '}'
+    |   Class Identifier Extends Identifier '{' VarDeclarationList MethodDeclarationList '}'
+    |   Class Identifier Extends Identifier '{' MethodDeclarationList '}'
+    ;
