@@ -33,3 +33,34 @@ alphanum                          ({alpha}|{digit})
 "length"                          { count(); return ArrayLength; }
 "main"                            { count(); return Main; }
 
+
+{alpha}({alphanum}|"_")*          { count(); return Id; }
+{digit}+                          { count(); return Number; }
+    /*\"(.|"\n")*\"                     { count(); return Text; }*/
+
+"&&"                              { count(); return And; }
+"<"                               { count(); return '<'; }
+"+"                               { count(); return '+'; }
+"-"                               { count(); return '-'; }
+"*"                               { count(); return '*'; }
+"!"                               { count(); return '!'; }
+"="                               { count(); return '='; }
+"."                               { count(); return '.'; }
+
+"("                               { count(); return '('; }
+")"                               { count(); return ')'; }
+"["                               { count(); return '['; }
+"]"                               { count(); return ']'; }
+"{"                               { count(); return '{'; }
+"}"                               { count(); return '}'; }
+","                               { count(); return ','; }
+";"                               { count(); return ';'; }
+
+"//".*"\n"                        { /* Comment */yylineno++; }
+"/*"(.|"\n")*"*\\"                { /* Comment */yylineno++; }
+[ \t\r]                           { count(); }
+\n                                { count(); yylineno++; }
+.                                 { yyerror("Unknown character"); }
+
+%%
+
