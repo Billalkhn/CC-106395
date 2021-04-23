@@ -14,3 +14,15 @@ void yyerror(char *s);
 %token Boolean Integer String True False
 %token This New Println Return ArrayLength Main
 %token Id Number And
+
+
+%right '='
+%left '{'
+%left '['
+%left And
+%left '+' '-'
+%left '*'
+%left '.'
+%left '!'
+%nonassoc '<'
+
