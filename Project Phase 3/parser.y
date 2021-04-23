@@ -125,3 +125,13 @@ Identifier: Id
     ;
 
 %%
+
+void yyerror(char *s) {
+   
+    fprintf(stderr, "line %d: %s\n", yylineno, s);
+}
+int yywrap(){return(1);}
+int main(void) {
+    yyparse();
+    return 0;
+}
